@@ -1,5 +1,23 @@
 {
+  "name": "monaco-editor-nls-plugin",
+  "description": "monaco-editor-nls-plugin",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "test -c"
+  },
+  "devDependencies": {},
   "dependencies": {
     "@types/node": "^20.12.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OnlyFlyer/monaco-editor-nls-plugin.git"
+  },
+  "author": "scofield90.email@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OnlyFlyer/monaco-editor-nls-plugin/issues"
+  },
+  "homepage": "https://github.com/OnlyFlyer/monaco-editor-nls-plugin#readme"
 }

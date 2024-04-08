@@ -6,14 +6,20 @@
   "types": "lib/types/index.d.ts",
   "scripts": {
     "test": "test -c",
-    "build:ts": "tsc"
+    "build:ts": "tsc",
+    "patch": "npm run patch",
+    "minor": "npm run minor",
+    "major": "npm run major"
   },
-  "files": ["lib/"],
+  "files": [
+    "lib/"
+  ],
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.12.5",
     "rollup": "^4.14.1",
     "typescript": "^5.4.4",
-    "@types/node": "^20.12.5"
+    "webpack": "^5.91.0"
   },
   "dependencies": {},
   "keywords": [

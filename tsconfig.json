@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     "allowJs": false,
-    "module": "ESNext",
     "target": "ESNext",
     "outDir": "./lib",
     "skipLibCheck": true,
     "declaration": true,
-    "declarationDir": "./lib/types"
+    "declarationDir": "./lib/types",
+    "moduleResolution": "NodeNext"
   },
   "include": ["src/**/*"],
 }

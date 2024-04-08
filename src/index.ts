@@ -1,3 +1,4 @@
+import { type Compiler } from 'webpack'; // type Configuration
 import { replaceFormatMessageLoader } from './loaders/replaceFormatMessage';
 import { replaceLocalizeLoader } from './loaders/replaceLocalize';
 
@@ -5,7 +6,6 @@ export interface IOptions {
   /** localize，includes: zh-cn、es、... */
   locale: string;
 };
-
 
 const initialOptions = {
   /** locale name */
@@ -39,10 +39,10 @@ function createLoaderRules(_options = initialOptions) {
 }
 
 // add webpack rules to webpack config
-function addCompilerRules(compiler, rules) {
+function addCompilerRules(compiler: Compiler, rules: any) {
   const compilerOptions = compiler.options;
   if (!compilerOptions.module) {
-      compilerOptions.module = { rules };
+      compilerOptions.module.rules = rules;
   } else {
       const moduleOptions = compilerOptions.module;
       moduleOptions.rules = (moduleOptions.rules || []).concat(rules);
@@ -54,8 +54,8 @@ export class MonacoEditorNlsPlugin {
   constructor(options: IOptions) {
     this.options = options;
   };
-  apply(compiler) {
+  apply(compiler: Compiler) {
     const rules = createLoaderRules(this.options);
     addCompilerRules(compiler, rules);
-}
+  }
 };

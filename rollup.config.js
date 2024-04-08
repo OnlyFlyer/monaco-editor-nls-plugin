@@ -4,7 +4,7 @@ import { MonacoEditorNlsPlugin }  from './src';
 export default {
   input: 'src/index.ts', // 入口文件
   output: {
-    file: 'lib/bundle.js',
+    file: 'lib/index.js',
     format: 'cjs' // CommonJS 格式
   },
   plugins: [

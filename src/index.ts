@@ -49,9 +49,7 @@ function addCompilerRules(compiler, rules) {
   }
 }
 
-
-
-class MonacoEditorNlsPlugin {
+export class MonacoEditorNlsPlugin {
   options: IOptions;
   constructor(options: IOptions) {
     this.options = options;

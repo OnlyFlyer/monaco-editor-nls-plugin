@@ -1,6 +1,6 @@
 {
   "name": "monaco-editor-nls-plugin",
-  "description": "monaco-editor-nls-plugin",
+  "description": "Webpack plugin support difference locale by vscode-loc",
   "version": "0.0.1",
   "main": "lib/index.js",
   "scripts": {

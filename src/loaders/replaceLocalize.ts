@@ -1,4 +1,4 @@
-export function replaceLocalize(content, _map, _meta) {
+export function replaceLocalizeLoader(content, _map, _meta) {
     const pathRegExp = /monaco-editor[\\\/]esm[\\\/]vs.+\.js$/;
     if (!pathRegExp.test(this.resourcePath)) return content;
     const vsPath = this.resourcePath.split(/monaco-editor[\\\/]esm[\\\/]/).pop();

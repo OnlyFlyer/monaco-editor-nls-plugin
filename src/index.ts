@@ -1,3 +1,6 @@
+import { replaceFormatMessageLoader } from './loaders/replaceFormatMessage';
+import { replaceLocalizeLoader } from './loaders/replaceLocalize';
+
 export interface IOptions {
   /** localize，includes: zh-cn、es、... */
   locale: string;

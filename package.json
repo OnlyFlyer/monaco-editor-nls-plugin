@@ -8,6 +8,7 @@
     "test": "test -c",
     "build:ts": "tsc"
   },
+  "files": ["lib/"],
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.6",
     "rollup": "^4.14.1",
@@ -15,6 +16,13 @@
     "@types/node": "^20.12.5"
   },
   "dependencies": {},
+  "keywords": [
+    "monaco-editor-nls-plugin",
+    "monaco-editor-nls",
+    "nls",
+    "webpack",
+    "plugin"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OnlyFlyer/monaco-editor-nls-plugin.git"

@@ -57,5 +57,9 @@ export class MonacoEditorNlsPlugin {
   apply(compiler: Compiler) {
     const rules = createLoaderRules(this.options);
     addCompilerRules(compiler, rules);
+    // compiler.hooks.emit // 输出编译结果到文件系统之前
+    // compiler.hooks.afterEmit // 输出编译结果到文件系统
+    // compiler.hooks.done // 编译完成
+    // compiler.hooks.afterDone('a', '');
   }
 };

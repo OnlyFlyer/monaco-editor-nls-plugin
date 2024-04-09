@@ -1,5 +1,7 @@
 # monaco-editor-nls-plugin
 
+[webpack 插件 - 支持 dt-react-monaco-editor 的中文快捷键](https://www.yuque.com/flyerwu/shdl2p/au08e7sc3umcq56b?singleDoc)
+
 ## Install
 
 ```bash

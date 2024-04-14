@@ -17,6 +17,7 @@
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/node": "^20.12.5",
+    "monaco-editor-nls": "^3.1.0",
     "rollup": "^4.14.1",
     "typescript": "^5.4.4",
     "webpack": "^5.91.0"
